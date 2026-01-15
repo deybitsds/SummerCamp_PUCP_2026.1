@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Académico - Universidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="header-info">
+            <span>📍 Urb. Ingeniería Larapa Grande A-7, San Jerónimo</span>
+            <span>✉️ centraldeinformes@universidad.edu.pe</span>
+        </div>
+        <div>
+            <span>Aula Virtual | ERP University</span>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="logo-section">
+            <div class="logo">🎓</div>
+            <div>
+                <div class="university-name">Universidad Nacional</div>
+                <div class="university-subtitle">Sistema Académico</div>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="active">INICIO</a>
+            <a href="#">ADMISIÓN</a>
+            <a href="#">PREGRADO</a>
+            <a href="#">POSGRADO</a>
+            <a href="#">🔍</a>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Centro de Cómputo</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Calendario</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Consultas</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Horarios</a></li>
+                    <li><a href="#">Notas</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Reportes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Constancia de matrícula</a></li>
+                    <li><a href="#" class="active">Constancia de Notas</a></li>
+                    <li><a href="#">Certificado de estudios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Trámites</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Solicitud de documentos</a></li>
+                    <li><a href="#">Mis solicitudes</a></li>
+                </ul>
+            </div>
+
+            <div class="user-section">
+                <div class="user-info">
+                    <div class="user-avatar">DC</div>
+                    <div>
+                        <div style="font-size: 13px; font-weight: 500;">David Cardoso</div>
+                        <div style="font-size: 11px; opacity: 0.8;">Estudiante</div>
+                    </div>
+                </div>
+                <button class="logout-btn">🚪 Cerrar Sesión</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="breadcrumb">
+                Inicio > Reportes > Solicitud de Documento
+            </div>
+
+            <div class="page-header">
+                <h1 class="page-title">Solicitud de Documento Académico</h1>
+                <p class="page-description">Complete el formulario para solicitar constancias, certificados u otros documentos oficiales</p>
+            </div>
+
+            <div class="form-card">
+                <form id="documentForm">
+                    <div class="form-section">
+                        <h2 class="section-title">Información del Estudiante</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Código de Estudiante <span class="required">*</span></label>
+                                <input type="text" name="studentCode" required value="210179" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>DNI <span class="required">*</span></label>
+                                <input type="text" name="dni" required placeholder="Número de documento">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nombre Completo <span class="required">*</span></label>
+                            <input type="text" name="fullName" required placeholder="Nombres y apellidos completos">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Carrera <span class="required">*</span></label>
+                                <select name="career" required>
+                                    <option value="">Seleccione su carrera</option>
+                                    <option value="ingenieria-sistemas">Ingeniería de Sistemas</option>
+                                    <option value="ingenieria-civil">Ingeniería Civil</option>
+                                    <option value="administracion">Administración</option>
+                                    <option value="contabilidad">Contabilidad</option>
+                                    <option value="derecho">Derecho</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Semestre Actual <span class="required">*</span></label>
+                                <select name="semester" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="2025-1">2025-1</option>
+                                    <option value="2025-2">2025-2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2 class="section-title">Datos de Contacto</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Correo Electrónico <span class="required">*</span></label>
+                                <input type="email" name="email" required placeholder="correo@universidad.edu.pe">
+                                <p class="helper-text">Se enviará confirmación a este correo</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Teléfono/Celular <span class="required">*</span></label>
+                                <input type="tel" name="phone" required placeholder="+51 999 999 999">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2 class="section-title">Tipo de Documento Solicitado</h2>
+                        
+                        <div class="form-group">
+                            <label>Documento <span class="required">*</span></label>
+                            <select name="documentType" required>
+                                <option value="">Seleccione el tipo de documento</option>
+                                <option value="constancia-matricula">Constancia de Matrícula</option>
+                                <option value="constancia-notas">Constancia de Notas</option>
+                                <option value="certificado-estudios">Certificado de Estudios</option>
+                                <option value="record-academico">Record Académico</option>
+                                <option value="carta-presentacion">Carta de Presentación</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Cantidad de Copias <span class="required">*</span></label>
+                                <input type="number" name="copies" required min="1" max="10" value="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Modalidad de Entrega <span class="required">*</span></label>
+                                <select name="delivery" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="presencial">Recojo presencial</option>
+                                    <option value="digital">Envío digital (PDF)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Motivo de la Solicitud</label>
+                            <textarea name="reason" placeholder="Describa brevemente para qué necesita el documento"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const form = document.getElementById('documentForm');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const data = {};
+            
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            console.log('Solicitud enviada:', data);
+            
+            alert('✅ Solicitud enviada exitosamente!\n\nNúmero de trámite: ST-' + Math.floor(Math.random() * 10000) + '\n\nRecibirá una confirmación en su correo electrónico.');
+        });
+    </script>
+</body>
+</html>
+
