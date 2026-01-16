@@ -10,8 +10,8 @@
     <!-- Top Header -->
     <div class="top-header">
         <div class="header-info">
-            <span>📍 Urb. Ingeniería Larapa Grande A-7, San Jerónimo</span>
-            <span>✉️ centraldeinformes@universidad.edu.pe</span>
+            <span>Urb. Ingeniería Larapa Grande A-7, San Jerónimo</span>
+            <span>centraldeinformes@universidad.edu.pe</span>
         </div>
         <div>
             <span>Aula Virtual | ERP University</span>
@@ -21,7 +21,7 @@
     <!-- Main Header -->
     <div class="main-header">
         <div class="logo-section">
-            <div class="logo">🎓</div>
+            <div class="logo"></div>
             <div>
                 <div class="university-name">Universidad Nacional</div>
                 <div class="university-subtitle">Sistema Académico</div>
@@ -32,7 +32,7 @@
             <a href="#">ADMISIÓN</a>
             <a href="#">PREGRADO</a>
             <a href="#">POSGRADO</a>
-            <a href="#">🔍</a>
+            <a href="#">Buscar</a>
         </nav>
     </div>
 
@@ -77,131 +77,113 @@
                 <div class="user-info">
                     <div class="user-avatar">DC</div>
                     <div>
-                        <div style="font-size: 13px; font-weight: 500;">David Cardoso</div>
+                        <div style="font-size: 13px; font-weight: 500;">Pepito Peréz</div>
                         <div style="font-size: 11px; opacity: 0.8;">Estudiante</div>
                     </div>
                 </div>
-                <button class="logout-btn">🚪 Cerrar Sesión</button>
+                <button class="logout-btn">Cerrar Sesión</button>
             </div>
         </aside>
 
         <!-- Main Content -->
         <main class="main-content">
             <div class="breadcrumb">
-                Inicio > Reportes > Solicitud de Documento
+                Inicio > Consultas > Encuesta Social
             </div>
 
             <div class="page-header">
-                <h1 class="page-title">Solicitud de Documento Académico</h1>
-                <p class="page-description">Complete el formulario para solicitar constancias, certificados u otros documentos oficiales</p>
+                <h1 class="page-title">Encuesta Social Estudiantil</h1>
+                <p class="page-description">Por favor, responde las siguientes preguntas para ayudarnos a mejorar los servicios de apoyo estudiantil</p>
             </div>
 
             <div class="form-card">
                 <form id="documentForm">
                     <div class="form-section">
-                        <h2 class="section-title">Información del Estudiante</h2>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Código de Estudiante <span class="required">*</span></label>
-                                <input type="text" name="studentCode" required value="210179" readonly>
-                            </div>
-                            <div class="form-group">
-                                <label>DNI <span class="required">*</span></label>
-                                <input type="text" name="dni" required placeholder="Número de documento">
+                        <div class="form-group">
+                            <label>¿Has tenido un accidente últimamente? <span class="required">*</span></label>
+                            <div style="display: flex; gap: 20px; margin-top: 8px;">
+                                <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                                    <input type="radio" name="disability" value="s" required>
+                                    Sí
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                                    <input type="radio" name="disability" value="n" required>
+                                    No
+                                </label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label>Nombre Completo <span class="required">*</span></label>
-                            <input type="text" name="fullName" required placeholder="Nombres y apellidos completos">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Carrera <span class="required">*</span></label>
-                                <select name="career" required>
-                                    <option value="">Seleccione su carrera</option>
-                                    <option value="ingenieria-sistemas">Ingeniería de Sistemas</option>
-                                    <option value="ingenieria-civil">Ingeniería Civil</option>
-                                    <option value="administracion">Administración</option>
-                                    <option value="contabilidad">Contabilidad</option>
-                                    <option value="derecho">Derecho</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Semestre Actual <span class="required">*</span></label>
-                                <select name="semester" required>
-                                    <option value="">Seleccione</option>
-                                    <option value="2025-1">2025-1</option>
-                                    <option value="2025-2">2025-2</option>
-                                </select>
+                            <label>¿Te has sentido solo los últimos 30 días? <span class="required">*</span></label>
+                            <div style="display: flex; gap: 20px; margin-top: 8px;">
+                                <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                                    <input type="radio" name="soledad" value="s" required>
+                                    Sí
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                                    <input type="radio" name="soledad" value="n" required>
+                                    No
+                                </label>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="form-section">
-                        <h2 class="section-title">Datos de Contacto</h2>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Correo Electrónico <span class="required">*</span></label>
-                                <input type="email" name="email" required placeholder="correo@universidad.edu.pe">
-                                <p class="helper-text">Se enviará confirmación a este correo</p>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Teléfono/Celular <span class="required">*</span></label>
-                                <input type="tel" name="phone" required placeholder="+51 999 999 999">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-                        <h2 class="section-title">Tipo de Documento Solicitado</h2>
-                        
                         <div class="form-group">
-                            <label>Documento <span class="required">*</span></label>
-                            <select name="documentType" required>
-                                <option value="">Seleccione el tipo de documento</option>
-                                <option value="constancia-matricula">Constancia de Matrícula</option>
-                                <option value="constancia-notas">Constancia de Notas</option>
-                                <option value="certificado-estudios">Certificado de Estudios</option>
-                                <option value="record-academico">Record Académico</option>
-                                <option value="carta-presentacion">Carta de Presentación</option>
+                            <label>¿Con qué frecuencia te has sentido abrumado por la carga académica este semestre? <span class="required">*</span></label>
+                            <select name="abrumado" required>
+                                <option value="">Seleccione una opción (0 = Nunca, 5 = Siempre)</option>
+                                <option value="0">0 - Nunca</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 - Siempre</option>
                             </select>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Cantidad de Copias <span class="required">*</span></label>
-                                <input type="number" name="copies" required min="1" max="10" value="1">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Modalidad de Entrega <span class="required">*</span></label>
-                                <select name="delivery" required>
-                                    <option value="">Seleccione</option>
-                                    <option value="presencial">Recojo presencial</option>
-                                    <option value="digital">Envío digital (PDF)</option>
-                                </select>
-                            </div>
+                            <p class="helper-text">Escala de 0 a 5, donde 0 es nunca y 5 es siempre</p>
                         </div>
 
                         <div class="form-group">
-                            <label>Motivo de la Solicitud</label>
-                            <textarea name="reason" placeholder="Describa brevemente para qué necesita el documento"></textarea>
+                            <label>¿Tienes dificultades económicas que afectan tu continuidad en la universidad? <span class="required">*</span></label>
+                            <select name="dificultad_economica" required>
+                                <option value="">Seleccione una opción (0 = Ninguna, 5 = Muy severas)</option>
+                                <option value="0">0 - Ninguna dificultad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 - Muy severas</option>
+                            </select>
+                            <p class="helper-text">Escala de 0 a 5, donde 0 es ninguna dificultad y 5 es muy severas</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Qué tan motivado te sientes para continuar con tu carrera actualmente? <span class="required">*</span></label>
+                            <select name="motivacion" required>
+                                <option value="">Seleccione una opción (0 = Nada motivado, 5 = Muy motivado)</option>
+                                <option value="0">0 - Nada motivado</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 - Muy motivado</option>
+                            </select>
+                            <p class="helper-text">Escala de 0 a 5, donde 0 es nada motivado y 5 es muy motivado</p>
                         </div>
                     </div>
 
                     <div class="form-actions">
                         <button type="button" class="btn btn-secondary">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                        <button type="submit" class="btn btn-primary">Enviar Encuesta</button>
                     </div>
                 </form>
             </div>
         </main>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="success-modal-content">
+            <span class="success-message">Se envió correctamente</span>
+        </div>
     </div>
 
     <script>
@@ -217,9 +199,16 @@
                 data[key] = value;
             });
             
-            console.log('Solicitud enviada:', data);
+            console.log('Encuesta enviada:', data);
             
-            alert('✅ Solicitud enviada exitosamente!\n\nNúmero de trámite: ST-' + Math.floor(Math.random() * 10000) + '\n\nRecibirá una confirmación en su correo electrónico.');
+            // Mostrar modal de éxito
+            const successModal = document.getElementById('successModal');
+            successModal.classList.add('show');
+            
+            // Ocultar modal después de 3 segundos
+            setTimeout(function() {
+                successModal.classList.remove('show');
+            }, 3000);
         });
     </script>
 </body>

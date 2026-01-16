@@ -341,3 +341,45 @@ textarea {
     }
 }
 
+/* Success Modal */
+.success-modal {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #10b981;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.success-modal.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.success-modal-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.success-message {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .success-modal {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+    }
+}
+
