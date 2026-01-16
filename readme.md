@@ -6,5 +6,20 @@
 ---
 
 ### Links útiles:
+
+#### Contenido profesores:
+
+###### Repositorios:
+- *Dia 2 LLM*: Repositorio profesor
+``` 
+https://github.com/renato145/pucp_bootcamp_202401
+```
+
+- *Dia 2 LLM*: Laboratorios
+```
+https://learn.deeplearning.ai/diffusion-models/
+```
+
+#### Contenido por alumnos:
 - https://poloclub.github.io/transformer-explainer/
 
