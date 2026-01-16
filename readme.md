@@ -10,6 +10,11 @@
 #### Contenido profesores:
 
 ###### Repositorios:
+- *Dia 1 SLM*: Repositorio profesor
+```
+https://github.com/renatocastro33/Summer_Camp_IA_PUCP_Small_Language_Model
+```
+
 - *Dia 2 LLM*: Repositorio profesor
 ``` 
 https://github.com/renato145/pucp_bootcamp_202401
